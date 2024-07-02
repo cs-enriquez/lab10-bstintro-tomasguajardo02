@@ -8,12 +8,15 @@ class Node {
 		// the Node should contain
 		// 	- an integer "key" that holds the value of the Node
 		// 	- a pointer to each child possible child node ("right" and "left")
+int key;
+Node *Left;
+Node *Right
 
 
 		// Write a constructor for the Node
 		// input: only an integer value for "key", no pointer arguments
 		// 		right and left pointers should be null
-
+Node(int keyvalue) : key(keyvalue), left(nullptr), right(nullptr){}
 };
 
 
@@ -22,22 +25,11 @@ class Node {
 Node* createTree() {
 	// root
 	Node *root = nullptr;
-
-	// level 1 (children of root)
-
-	// level 2 (children of 0)
-
-	// level 2 (children of 21)
-
-	// level 3 (children of -2)
-
-	// level 3 (children of 7)
-
-	// level 3 (children of 15)
-
-	// level 3 (children of 99)
-
-	// level 4 (children of 18)
+int values[] = {13, 0, 7, 6, 21, 15, -2, 12, 99, 18, 19, -1};
+int numValues = sizeof(Values) / sizeof(values[0]);
+for (int i = 0; i < numValues; ++i) {
+	root = inseert(root, values[i];
+}
 
 	return root;
 }
